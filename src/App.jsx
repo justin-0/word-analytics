@@ -1,17 +1,13 @@
-import AnalyticsContainer from "./components/AnalyticsContainer";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Stats from "./components/Stats";
-import TextArea from "./components/TextArea";
+import Analytics from "./components/Analytics";
 
 function App() {
+  console.log("App rendered");
   return (
     <>
       <Header />
-      <AnalyticsContainer>
-        <TextArea />
-        <Stats />
-      </AnalyticsContainer>
+      <Analytics />
       <Footer />
     </>
   );
