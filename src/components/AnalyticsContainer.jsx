@@ -1,5 +1,5 @@
 function AnalyticsContainer({ children }) {
-  return <main>{children}</main>;
+  return <main className="container">{children}</main>;
 }
 
 export default AnalyticsContainer;

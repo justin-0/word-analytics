@@ -1,5 +1,9 @@
 function Footer() {
-  return <footer>Footer</footer>;
+  return (
+    <footer className="footer">
+      <small>&copy; Copyright by Tinology. All rights reserved.</small>
+    </footer>
+  );
 }
 
 export default Footer;
