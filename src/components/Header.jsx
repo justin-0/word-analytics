@@ -5,7 +5,7 @@ function Header() {
     <header>
       <Background />
       <h1 className="first-heading">
-        Word<span className="first-heading--thin">Analytics</span>
+        Tweet<span className="first-heading--thin">Analytics</span>
       </h1>
     </header>
   );

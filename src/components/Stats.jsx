@@ -20,7 +20,9 @@ function Stat({ label, number }) {
 
   return (
     <section className="stat">
-      <span className={`stat__number ${isLimit ? "limit" : null}`}>
+      <span
+        className={`stat__number ${isLimit ? "stat__number--limit" : null}`}
+      >
         {number}
       </span>
       <h2 className="second-heading">{label}</h2>
