@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import AnalyticsContainer from "./AnalyticsContainer";
 import Stats from "./Stats";
 import TextArea from "./TextArea";

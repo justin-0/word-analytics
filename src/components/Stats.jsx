@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Stats({ chars }) {
   const words = chars.split(/\s+/).filter(Boolean).length;
   const characters = chars.length;
