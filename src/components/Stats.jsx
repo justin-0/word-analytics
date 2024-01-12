@@ -16,9 +16,13 @@ function Stats({ chars }) {
 }
 
 function Stat({ label, number }) {
+  const isLimit = label === "twitter" && number < 0;
+
   return (
     <section className="stat">
-      <span className="stat__number">{number}</span>
+      <span className={`stat__number ${isLimit ? "limit" : null}`}>
+        {number}
+      </span>
       <h2 className="second-heading">{label}</h2>
     </section>
   );
