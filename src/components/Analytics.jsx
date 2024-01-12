@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnalyticsContainer from "./AnalyticsContainer";
 import Stats from "./Stats";
 import TextArea from "./TextArea";
 
 function Analytics() {
   const [chars, setChars] = useState("");
+
   return (
     <>
       <AnalyticsContainer>
         <TextArea setChars={setChars} chars={chars} />
-        <Stats />
+        <Stats chars={chars} />
       </AnalyticsContainer>
     </>
   );

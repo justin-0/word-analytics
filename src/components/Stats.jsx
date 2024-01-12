@@ -1,19 +1,27 @@
-function Stats() {
+import { useState } from "react";
+
+function Stats({ chars }) {
+  const words = chars.split(/\s+/).filter(Boolean).length;
+  const characters = chars.length;
+  const maxCharactersPerTweet = 280;
+  const tweetLength = maxCharactersPerTweet - characters;
+  const numberOfTweets = Math.ceil(characters / maxCharactersPerTweet);
+
   return (
     <section className="stats">
-      <Stat text="words" number={0} />
-      <Stat text="characters" number={0} />
-      <Stat text="twitter" number={280} />
-      <Stat text="tweets" number={0} />
+      <Stat label="words" number={words} />
+      <Stat label="characters" number={characters} />
+      <Stat label="twitter" number={tweetLength} />
+      <Stat label="tweets" number={numberOfTweets} />
     </section>
   );
 }
 
-function Stat({ text, number }) {
+function Stat({ label, number }) {
   return (
     <section className="stat">
       <span className="stat__number">{number}</span>
-      <h2 className="second-heading">{text}</h2>
+      <h2 className="second-heading">{label}</h2>
     </section>
   );
 }
