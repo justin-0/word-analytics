@@ -75,6 +75,7 @@ body {
   height: 100%;
   width: 100%;
   word-wrap: break-word;
+  white-space: pre-line;
 }
 
 .warning {
